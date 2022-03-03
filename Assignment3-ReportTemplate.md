@@ -62,8 +62,13 @@ Figure 9: Final Range Condition Coverage:
 ![RCA](https://user-images.githubusercontent.com/81999006/156495501-b5414f8b-b8e6-46db-bf22-01209a4fdaba.png)
 
 Figure 10: Final DataUtilities Statement Coverage:
+![SD](https://user-images.githubusercontent.com/81999006/156495892-8db73ecb-1bf8-4710-be69-154c52cf10df.png)
+
 Figure 11: Final DataUtilities Branch Coverage:
+![BD](https://user-images.githubusercontent.com/81999006/156495929-b6af5373-76f0-424b-b5cc-cda6a9a76f78.png)
+
 Figure 12: Final DataUtilities Condition Coverage:
+![DCL](https://user-images.githubusercontent.com/81999006/156495750-d62b7880-042a-4bc5-a529-423285148838.png)
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
