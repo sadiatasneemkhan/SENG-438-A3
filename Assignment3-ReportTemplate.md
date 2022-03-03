@@ -29,9 +29,41 @@ Text…
 
 Text…
 
-# 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
+# 5 A detailed report of the coverage achieved of each class and method
+## Intial Coverage Values (with Black Box Testing)
 
-Text…
+Figure 1: Initial Range Statement Coverage:
+![LIR](https://user-images.githubusercontent.com/81999006/156495136-130c2d40-f813-4c63-9d3c-7cbbb630e4c0.png)
+
+Figure 2: Initial Range Branch Coverage:
+![BIR](https://user-images.githubusercontent.com/81999006/156495361-e027e3b2-95ba-4db0-bf7d-f12438dc20fb.png)
+
+Figure 3: Initial Range Condition Coverage:
+![CIR](https://user-images.githubusercontent.com/81999006/156495377-ef21fbae-c219-4afe-a9f2-ed629a1fb779.png)
+
+Figure 4: Initial DataUtilities Statement Coverage:
+![DSL](https://user-images.githubusercontent.com/81999006/156495711-1dc25e46-761d-449f-968c-b1c311126e5a.png)
+
+Figure 5: Initial DataUtilities Branch Coverage:
+![DBL](https://user-images.githubusercontent.com/81999006/156495735-bf0ae793-7464-4960-9b6f-3d120bfca773.png)
+
+Figure 6: Initial DataUtilities Condition Coverage:
+![DCL](https://user-images.githubusercontent.com/81999006/156495750-d62b7880-042a-4bc5-a529-423285148838.png)
+
+## Improved Coverage Values (with White Box Testing)
+
+Figure 7: Final Range Statement Coverage:
+![RSA](https://user-images.githubusercontent.com/81999006/156495460-119d7cda-38da-4e1d-8bf9-bf730666073b.png)
+
+Figure 8: Final Range Branch Coverage:
+![RBA](https://user-images.githubusercontent.com/81999006/156495485-e3881fb1-d6d9-4d26-96d9-f0749c691185.png)
+
+Figure 9: Final Range Condition Coverage:
+![RCA](https://user-images.githubusercontent.com/81999006/156495501-b5414f8b-b8e6-46db-bf22-01209a4fdaba.png)
+
+Figure 10: Final DataUtilities Statement Coverage:
+Figure 11: Final DataUtilities Branch Coverage:
+Figure 12: Final DataUtilities Condition Coverage:
 
 # 6 Pros and Cons of coverage tools used and Metrics you report
 
