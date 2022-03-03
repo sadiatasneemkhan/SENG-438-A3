@@ -2,12 +2,13 @@
 
 **Lab. Report #3 – Code Coverage, Adequacy Criteria and Test Case Correlation**
 
-| Group \#:      |     |
-| -------------- | --- |
-| Student Names: |     |
-|                |     |
-|                |     |
-|                |     |
+| Group \:  35     |            |
+|-------------------|------------|
+| Student Names:    |    UCID    |
+| Luis Sulbaran     | 30090906   |
+| Adam Abouelhassan | 30087777   |
+| Jaxson Waterstreet| 30095706   |  
+| Sadia Khan        | 30090271   |
 
 (Note that some labs require individual reports while others require one report
 for each group. Please see each lab document for details.)
