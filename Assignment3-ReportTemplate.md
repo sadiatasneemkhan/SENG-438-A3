@@ -26,20 +26,106 @@ The objective of this assignment was to familiarize and implement white-box test
 ![Data Flow Graph calculateColumnTotal](https://user-images.githubusercontent.com/81999006/156867101-08be111d-8623-4628-bb34-78564cf861a3.png)
 
 ### Def-Use Sets
+
+| n  | def(n) | use(n) |
+|----|--------|--------|
+| 1  |    {data, column}   |    {}    |
+| 2  |  {}      |     {data}   | 
+| 3  |    {total}    |   {}     |
+| 4  |   {rowCount}     |    {data}    |
+| 5  |   {r}     |   {r, rowCount}     |
+| 6  |  {n}      |{data, r, column}        |
+| 7  | {}       |    {n}    |
+| 8  |   {total}     |  {total, n}      |
+| 9  |    {r}    |    {r}    |
+| 10  |   {}    |     {total}   |
+
 ### DU-Pairs per Variable
+
+|Var| DU-Pair|
+|---|---------|
+|data| (1, 2)|
+|| (1, 4)|
+|| (1, 6)|
+|column| (1, 6)|
+|total| (3, 8)|
+|| (3, 10)|
+|| (8, 10)|
+|rowCount| (4, 5) |
+|r| (5, 5)|
+|| (5, 6)|
+|| (5, 9)|
+|| (9, 5)|
+|n| (6, 7)|
+|| (6, 8)|
+
 ### Pairs Covered For Each Test Case
+
+|Test Case | DU Pairs Covered|
+|----------|---------------------------------------|
+|test_calculateColumnTotal_posDoubleNum() | all|
+|test_calculateColumnTotal_negDoubleNum() |all|
+|test_calculateColumnTotal_posIntNum() |all|
+|test_calculateColumnTotal_negIntNum() |all|
+
+Each of these test cases covered all the DU-Pairs.
+
 ### DU-Pair Coverage Calculation
 
+DU-Pair Coverage = covered DU-Pairs / Total DU-Pairs * 100
+                 = 14/14 * 100
+                 = 100%
+                 
 ## Range.combine()
 
 ### Data Flow Gragh
 
-![Data Flow Graph combine](https://user-images.githubusercontent.com/81999006/156867183-daa2804d-388c-4ac3-a262-4270c67eb12a.png)
+![Data Flow Graph combine](https://user-images.githubusercontent.com/81999006/156868501-d332b887-4a8d-4fbd-8fd1-8faca658e5ac.jpg)
 
 ### Def-Use Sets
+
+| n  | def(n) | use(n) |
+|----|--------|--------|
+| 1  |    {range1, range2}    |   {}     |
+| 2  |  {}      | {range1}       | 
+| 3  |    {}    |   {range2}     |
+| 4  |  {}      |    {range2}    |
+| 5  |    {}    |  {range1}      |
+| 6  |     {l, u, new Range()}   |   {range1, range2, l, u}     |
+
 ### DU-Pairs per Variable
+
+|Var| DU-Pair|
+|---|---------|
+|range1| (1, 2)|
+|| (1, 5)|
+|| (1, 6)|
+|range2| (1, 3)|
+|| (1, 4)|
+|| (1, 6)|
+|l|(6, 6) |
+|u| (6, 6) |
+|new Range()| (6, 6) |
+
 ### Pairs Covered For Each Test Case
+
+|Test Case | DU Pairs Covered|
+|----------|---------------------------------------|
+|test_combine_lowerBoundaryIsNull() | range1: (1, 2) |
+||range2: (1, 3)|
+|test_combine_upperBoundaryIsNull() |range1: (1, 2), (1, 5)|
+||range2: (1, 4)|
+|test_combine_validBoundaries() |range1: (1, 2), (1, 6)|
+||range2: (1, 3), (1, 6)|
+||l: (6, 6)|
+||u: (6, 6)|
+||new Range(): (6, 6)|
+
 ### DU-Pair Coverage Calculation
+
+DU-Pair Coverage = covered DU-Pairs / Total DU-Pairs * 100
+                 = 9/9 * 100
+                 = 100%
 
 # 3. Testing Strategy For New Unit Tests 
 
