@@ -15,11 +15,31 @@ for each group. Please see each lab document for details.)
 
 # 1. Introduction
 
-Text…
+The objective of this assignment was to familiarize and implement white-box testing techniques using coverage tools within Eclipse. By applying white-box testing on our previous Assignment 2 test suite, we can improve the overall completeness and adequacy of our test suite.
 
-# 2. Manual Data-flow Coverage Calculations for DataUtiliites.calculateColumnTotal() and Range.combine()
+# 2. Manual Data-flow Coverage Calculations for DataUtilities.calculateColumnTotal() and Range.combine()
 
-Text…
+## DataUtilities.calculateColumnTotal()
+
+### Data Flow Gragh
+
+![Data Flow Graph calculateColumnTotal](https://user-images.githubusercontent.com/81999006/156867101-08be111d-8623-4628-bb34-78564cf861a3.png)
+
+### Def-Use Sets
+### DU-Pairs per Variable
+### Pairs Covered For Each Test Case
+### DU-Pair Coverage Calculation
+
+## Range.combine()
+
+### Data Flow Gragh
+
+![Data Flow Graph combine](https://user-images.githubusercontent.com/81999006/156867183-daa2804d-388c-4ac3-a262-4270c67eb12a.png)
+
+### Def-Use Sets
+### DU-Pairs per Variable
+### Pairs Covered For Each Test Case
+### DU-Pair Coverage Calculation
 
 # 3. Testing Strategy For New Unit Tests 
 
